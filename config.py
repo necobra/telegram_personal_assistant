@@ -7,7 +7,7 @@ load_dotenv()
 
 
 class Config:
-    users_list = os.getenv("USER_LIST").split(",")  # admins and notification
+    users_list = [int(userid) for userid in os.getenv("USER_LIST").split(",")]  # admins and notification
     groups_list = [-4188484276]
 
 
