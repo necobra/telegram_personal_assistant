@@ -34,7 +34,7 @@ async def command_start_handler(message: Message) -> None:
     if message.from_user.id in users_list:
         await message.answer("Добрий день, пане Олександре")
     else:
-        await message.asnswer("Немає доступу")
+        await message.answer("Немає доступу")
 
 
 @dp.message(F.text, Command("status"))
